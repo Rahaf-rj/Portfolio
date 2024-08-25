@@ -243,6 +243,8 @@ h1{
   align-content: center;
   margin: 0 auto;
   justify-content: center
+  min-width: 100vw;
+  display: block;
 }
 
 h2{
