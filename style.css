@@ -36,8 +36,8 @@ label .menu {
   height: 200px;
   background: #1e274c;
   border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+   /* -webkit-transition: .5s ease-in-out; */
+   transition: .5s ease-in-out;  
   box-shadow: 0 0 0 0 #1f284f, 0 0 0 0 #1b2447;
   cursor: pointer;
   max-height: fit-content;
@@ -46,10 +46,10 @@ label .menu {
 
 label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
-  width: 30px;
-  height: 2px;
+  top: 150px;
+  left: 90px;
+  width: 40px;
+  height: 3px;
   background: #69D2e7;
   display: block;
   -webkit-transform-origin: center;
@@ -59,8 +59,8 @@ label .hamburger {
 }
 
 label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  /* -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; */
   content: "";
   position: absolute;
   display: block;
@@ -82,20 +82,20 @@ label input:checked + .menu {
 }
 
 label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
+  /* -webkit-transform: rotate(45deg); */
   transform: rotate(45deg);
   
 }
 
 label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
+  /* -webkit-transform: rotate(90deg); */
   transform: rotate(90deg);
   bottom: 0;
   
 }
 
 label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
+  /* -webkit-transform: rotate(90deg); */
   transform: rotate(90deg);
   top: 0;
   
@@ -380,23 +380,23 @@ p{
   animation: spin 2.5s linear infinite;
 }
 
-@keyframes spin {
+/* @keyframes spin {
   0% {
     --rotate: 0deg;
   }
   100% {
     --rotate: 360deg;
   }
-}
+} */
 
 footer{
 
   
-  position: bottom;
-  /* bottom: 0; */
+  position: relative;
+  bottom: 0;
 
   margin-top: 13%;
-  margin-bottom: 4%;
+  margin-bottom: 0%;
 
 }
 
@@ -486,6 +486,7 @@ h4.col-6{
 .contactBox{
 
   height: 40vh;
+  max-width: 100vw;
   margin-top: 30%;
   
   display: grid;
@@ -540,6 +541,13 @@ h4.col-6{
 .card{
 
   vertical-align: top;
+  align-content: center;
+  align-items: center;
+}
+
+.skills h2{
+
+  display: block;
 }
 
 
@@ -551,5 +559,60 @@ h4.col-6{
    color: #2f3969;
    border-color: #525e8f;
    margin-left: 4%;
+
+}
+
+.card img{
+
+  vertical-align: top;
+  
+}
+
+#allPage{
+  
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#pageContent{
+
+  padding-bottom: 12rem;
+}
+
+footer{
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  margin-bottom: 3rem;
+}
+
+.note{
+
+  display: none;
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+  #allPage{
+
+    display: none;
+  }
+
+  label{
+
+    display: none;
+  }
+  
+  .note{
+
+    display:block;
+    border: #3c67e3 solid 1px;
+  }
+
 
 }
