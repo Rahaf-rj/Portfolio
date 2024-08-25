@@ -193,6 +193,11 @@ h1{
   display: block;
 }
 
+.aboutMe a{
+  display: block;
+  margin-bottom: 5%;
+}
+
 /* @keyframes bruh {
    0% {
        background-position: 0 50%;
