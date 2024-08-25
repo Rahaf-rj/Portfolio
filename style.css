@@ -346,7 +346,7 @@ p{
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: inline-block;
+  display: inline-flex;
   font-size: 1.5em;
   color: rgb(88 199 250 / 0%);
   cursor: pointer;
